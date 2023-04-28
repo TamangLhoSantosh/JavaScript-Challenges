@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 8</title>
+</head>
+<body>
+    <h1>Basic JavaScript Challenge</h1>
+    <h2>Challenge 8</h2>
+
+    <script>
+        var color = prompt("Enter any primary color : ");
+        lowercolor = color.toLowerCase();
+        var colorSelected = "";
+        switch(lowercolor){
+            case 'red': colorSelected = 'Red'; break;
+            case 'blue': colorSelected = 'Blue'; break;
+            case 'yellow': colorSelected = 'Yellow'; break;
+            default: console.log("Error : You didn't select primary color.")
+        };
+        if (colorSelected != ""){
+            console.log("You selected color : " + colorSelected + ".");
+        }
+    </script>
+</body>
+</html>
