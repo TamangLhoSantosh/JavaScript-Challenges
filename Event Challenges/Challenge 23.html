@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 23</title>
+</head>
+<body>
+    <h1>Event Challenge</h1>
+    <h2>Challenge 23</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore voluptatum repellendus vitae libero. Voluptatem incidunt facilis placeat ipsam ab delectus, reiciendis repellendus aperiam vero, similique fugiat amet officiis enim?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quaerat voluptates porro qui minus delectus voluptatem eos nulla expedita sapiente aspernatur, itaque corporis, accusamus recusandae quasi fuga? Cum, asperiores distinctio?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam maiores inventore nobis alias! Molestias, labore. Sequi, consequatur, obcaecati tenetur minus nulla ipsa veniam recusandae, non sint cupiditate numquam soluta.</p>
+
+    <button>Trun Green</button>
+
+    <script>
+        var paras = document.getElementsByTagName('p');
+        var btn = document.querySelector('button');
+
+        btn.addEventListener('click', function(){
+            for (eachPara of paras){
+                eachPara.style.color='green';
+            }
+        });
+    </script>
+</body>
+</html>

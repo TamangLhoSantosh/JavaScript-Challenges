@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 26</title>
+</head>
+<body>
+    <h1>Event Challenge</h1>
+    <h2>Challenge 26</h2>
+    <div>
+        <p>This is pragraph 1.</p>
+    </div>
+    
+    <button>Add a Paragraph</button>
+    <button>Remove a Paragraph</button>
+
+    <script>
+        var i = 1;
+        var divT = document.getElementsByTagName('div');
+        var btn = document.querySelector('button');
+        
+
+        btn.addEventListener('click', function(){
+            i ++;
+            var newP = document.createElement('p')
+            var cont = document.createTextNode('This is paragraph ' + i +'.')
+
+            newP.appendChild(cont);
+            divT[0].appendChild(newP);
+        });
+
+        var btn_remove = document.getElementsByTagName('button')[1];
+
+        btn_remove.addEventListener('click', function(){
+            
+            var paras = document.getElementsByTagName('p');
+            
+            if (i === 1){
+                alert('You are trying to delete last paragraph.');
+            }
+            else{
+                i --;
+                divT[0].removeChild(paras[paras.length - 1]);
+            }
+        });
+    </script>
+</body>
+</html>
